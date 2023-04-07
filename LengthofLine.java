@@ -22,7 +22,8 @@ public class GeometryLine {
 		 *3)Calculate length of line by Mathematical functions
                  *4)Get the length of another line from user input
 		 *5)Converting lengths of both lines L1 and L2 into objects for using equals(),compareTo() methods
-		 *6)To Check the lengths of two lines are equal or not using equals() method 
+		 *6)To Check the lengths of two lines are equal or not using equals() method
+                 *7)To compare the  lengths of both  lines using compareTo method 
 		 */
 	
 		System.out.println("Welcome to Line Comparison Computation Program");
@@ -82,6 +83,21 @@ public class GeometryLine {
                }
                else {
         	   System.out.println("Lenghts of both lines are different");
-               }         
+               } 
+               
+               /*
+               *7)To compare the  lengths of both  lines using compareTo method
+               */
+        
+               int res=obj1.compareTo(obj2);
+        
+               if(res > 0) {
+                     System.out.println("Length of line 1 is greater than length of Line 2");
+               } else if(res < 0) {
+                     System.out.println("Length of line 1  is less than length of Line 2");
+               } else {
+                     System.out.println("Length of line 1  is equal to length of Line 1");
+               }
+               sc.close();        
      }
 }
