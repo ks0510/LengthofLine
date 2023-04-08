@@ -49,9 +49,9 @@ public class GeometryLine {
 		
 		double x = Math.pow((x2-x1), 2);
                 double y = Math.pow((y2-y1), 2);
-                int L1 = (int) Math.sqrt(x+y);
+                int length1 = (int) Math.sqrt(x+y);
         
-                System.out.println("Length of line is "+L1);
+                System.out.println("Length of line is "+length1);
         
 		         
      }
