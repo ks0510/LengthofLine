@@ -52,9 +52,9 @@ public class GeometryLine {
 		
 		double x = Math.pow((x2-x1), 2);
                 double y = Math.pow((y2-y1), 2);
-                int L1 = (int) Math.sqrt(x+y);
+                int length1 = (int) Math.sqrt(x+y);
         
-                System.out.println("Length of line is "+L1);
+                System.out.println("Length of line is "+length);
         
 		/*
                 *4)Get the length of another line from user input
@@ -62,22 +62,22 @@ public class GeometryLine {
         
                 System.out.println("Enter Length of Line 2");
         
-                int L2=sc.nextInt();
+                int length2=sc.nextInt();
         
                /*
                * 5)Converting lengths of both lines L1 and L2 into objects for using equals(),compareTo() methods
                */
         
-               Integer obj1 = new Integer(L1);
-               Integer obj2 = new Integer(L2);
+               Integer obj1 = new Integer(length1);
+               Integer obj2 = new Integer(length2);
         
                /*
                *6)To Check the lengths of two lines are equal or not using equals() method
                */
         
-               boolean Result=obj1.equals(obj2);
+               boolean result1=obj1.equals(obj2);
         
-               if(Result) {
+               if(result1) {
         	   System.out.println("Lengths of both lines are equal");
                }
                else {
